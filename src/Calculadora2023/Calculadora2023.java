@@ -8,12 +8,13 @@ public class Calculadora2023 {
     	
     	//Variáveis
         double num1, num2, resultado, modulo;
-        double num;
+    
         
         //Instancias
         JonasOperacoes objJonas = new JonasOperacoes();
         raylsonOperacao objRaylson = new raylsonOperacao();  // Adicionado aqui
         RamonOperacoes objRamon = new RamonOperacoes();
+        subsavio subtracao = new subsavio();
         
         
         //Início
@@ -28,15 +29,15 @@ public class Calculadora2023 {
         Soma somalarissa = new Soma ();
         resultado = somalarissa.soma(num1, num2);
         System.out.println("A soma é: " + resultado);
-
-        Soma modulolarissa = new Soma ();
+      
         modulo = somalarissa.modulo(resultado);
         System.out.println("O módulo é: " + modulo );
 
-         //Subtração
-         subsavio subtracao = new subsavio();
+         //Savio 
          resultado = subtracao.subtrair(num1, num2);
          System.out.println("A subtração é: " + resultado);
+         System.out.println("A área do retângulo é: " + objJonas.multiplicacao(num1, num2));
+
 
         // Multiplicação
          //Jonas >> Multiplicação
@@ -52,23 +53,14 @@ public class Calculadora2023 {
         } else
         System.out.println("A divisão é: " + DivisaoMatheus.divisao(num1, num2));
 
+        
         //Jonas >> Hipotenusa
         System.out.println("A Hipotenusa dos lados A = " + somalarissa.modulo(num1) + " e B = " + somalarissa.modulo(num2) + " é = " + objJonas.Hipotenusa(num1, num2));
-        
-        //Potenciação
         
         //Jonas >> Binário
         Double somaResul = somalarissa.modulo(somalarissa.soma(num1, num2));
         System.out.println("O resultado da soma dos Inteiros recebido, em binário, é: " + somalarissa.numeroDecimalParaBinario(somaResul.intValue()));
         
-        //Savio >> Área do retângulo
-         if (num1*num2<0){
-            System.out.println("O cálculo da área do retângulo é: " + num1 * num2*-1);
-        }
-        else {
-            System.out.println("O cálculo da área do retângulo é: " + num1 * num2);
-        }
-
         //Raylson >> Área do círculo
         objRaylson.AreaCirculo(num1, num2);  // Adicionado aqui
         

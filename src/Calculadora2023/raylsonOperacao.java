@@ -19,7 +19,7 @@ public class raylsonOperacao {
     	return Math.pow(base, 2);	
     }
 
-	// Método
+	// Método implementado por savio.
 	public void AreaCirculo(double num1, double num2){
     	double raio = num1 + num2;
     	if(raio > 0){
